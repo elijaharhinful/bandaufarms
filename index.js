@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 urlencodedparser = bodyParser.urlencoded({extended: false});
 app.use('/public',express.static('public'));
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 5000);
 
 app.get('/', function (req, res) {
     res.render('index');
@@ -60,5 +60,5 @@ app.use(function (err, req, res, next) {
 });
 
 app.listen(app.get('port'), function () {
-    console.log('App is running on http://localhost:3000');
+    console.log('App is running on http://localhost:5000');
 });
