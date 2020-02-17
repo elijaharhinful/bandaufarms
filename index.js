@@ -20,6 +20,10 @@ app.get('/about', function (req, res) {
     res.render('about');
 });
 
+app.get('/invest',function(req,res){
+    res.render('invest');
+})
+
 app.get('/farming-practice', function (req, res) {
     res.render('farming-practice');
 });
